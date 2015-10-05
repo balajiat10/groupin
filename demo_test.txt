@@ -1,0 +1,17 @@
+
+<div class="title" width="1500" id="div2">
+<h1 style="text-align:center; font-color:yellow;font-size:40">
+<img src="ra.jpg" align="center" alt="logo" height="50" width="50">
+SHOPEE<img src="ra.jpg" align="center" alt="logo" height="50" width="50"></H1> 
+<h1 align="right">
+<a href="register.html" >
+	<button width="48" height="48">REGISTER</button></a>
+<form name="log" method="post">
+            <input type="text" name="name" value="" size="10" />
+		 <input type="text" name="pwd" value="" size="10" />
+	
+            <input type="submit" value="submit" name="submit" onClick="sendInfo()" />
+        </form>
+
+</h1>
+</DIV>

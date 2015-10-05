@@ -1,0 +1,185 @@
+<html>
+
+<head>
+
+<title>Group in</TITLE>
+
+<style>
+
+div
+{
+	
+
+
+
+BACKGROUND-COLOR:F7F3F3
+}
+
+div.home
+{
+	border-width:2px;
+	
+
+	
+border-color:58FAF4;
+
+	border-collapse:collapse;
+
+	BACKGROUND-COLOR:F7F3F3;
+}
+
+</style>
+
+<script language="javascript">
+function verify()
+{
+	if (form1.name.value == "") 
+	{
+                alert("Please give the name");
+             	return false;
+        }
+	if (document.form1.reg.value.length !==10)
+	{
+                alert("Please give the phone number");
+     		return false;
+        }
+        var x=form1.email.value;
+	var a=x.indexOf('@');
+	var b=x.lastIndexOf('.');
+        if ( x==0 || a+2 > b || b+2 > x.length) 
+	{
+                alert("Please give the email-id");
+                return false;
+        }
+	if (document.form1.gender[0].checked == false && document.form1.gender[1].checked == false) 
+	{
+                alert("Please select the gender");
+         	return false;
+       	}
+	if (document.form1.pass.value == "") 
+	{
+                alert("Please enter the password");               
+		return false;
+       	}
+	if (document.form1.pass.value.length < 6) 
+	{
+                alert("Please enter the password more than 5 characters");
+		return false;
+        }
+	if (document.form1.r_pass.value !== document.form1.pass.value) 
+	{
+                alert("Please re-enter the password");
+		return false;
+        }
+	return( true );
+}
+</script>
+ <link rel="stylesheet" href="cssf/style.css">
+</head>
+
+<div class="title" width="1500"  style="background-image:url('z5.jpg');height:110px;width:1350px;">
+
+<h1 style="text-align:center; font-color:yellow;font-size:40">
+<br>
+Group in
+</H1> 
+<h1 align="right">
+  <a href="app1.jsp" >
+<button width="48" height="48"><font color="black">Login</font></button>
+</a>
+
+<a href="app1.jsp" >
+<button width="48" height="48"><font color="black">Home</font></button>
+</a>
+</h1>
+
+</DIV>
+
+<DIV CLASS="HOME" style="background-image:url('z4.jpg');height:700px;width:1350px;">
+
+
+
+
+<h1 align="right">
+
+</h1>
+
+<H1 style="text-align:center; font-color:yellow;font-size:20">
+
+<br><br>
+<br><br>
+<table align="center">
+
+<tr align="center">
+
+<td>
+</td>
+
+<td>
+<form method="POST" action="signup.jsp" name="form1">
+<table border="2" align="center" cellpadding="7">
+<caption>Catch up with awesome ideas</caption>
+<tr>
+<td><strong>Name</strong></td>
+<td>
+<input type="text" name="name"/>
+</td>
+</tr>
+<tr>
+<td><strong>Phone number</strong></td>
+<td>
+<input type="text" name="reg" required/>
+</td>
+</tr>
+
+<tr>
+<td><strong>Email-id</strong></td>
+<td>
+<input type="text" name="email"/>
+</td>
+</tr>
+<tr>
+<td><strong>Gender</strong></td>
+<td>
+<input type="text" name="gender" required/>
+</td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td>
+<input type="password" name="pass"/>
+</td>
+</tr>
+<tr>
+<td><strong>Re-Password</strong></td>
+<td>
+<input type="password" name="r_pass"/>
+</td>
+</tr>	
+<tr align="center">
+<td>
+<input type="submit" value="Signup" onClick="return (verify());"/>
+</td>
+<td>
+<input type="reset">
+</td>
+</tr>
+</table>
+</form>
+
+</td>
+
+<td></td>
+
+</tr>
+</table>
+
+</h1>
+
+
+
+</div>
+
+
+</HTML>
+
